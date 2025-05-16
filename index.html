@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Backend Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Fira Code', monospace;
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e293b;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #38bdf8;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      margin-top: 0.5rem;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .tech-stack pre {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+
+    .project-card {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-card h3 {
+      color: #38bdf8;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .stats, .logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .logos img {
+      height: 50px;
+      transition: transform 0.3s;
+    }
+
+    .logos img:hover {
+      transform: scale(1.1);
+    }
+
+    .socials a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1e293b;
+      margin-top: 2rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+  <header data-aos="fade-down">
+    <h1 id="title">Hi 👋, I'm a Python Backend Developer</h1>
+    <p>Django | DRF | MySQL | AWS | Linux | GitHub | Generative AI</p>
+  </header>
+
+  <section class="section" data-aos="fade-up">
+    <h2>🚀 About Me</h2>
+    <p>
+      I specialize in building robust backend systems using Python and Django.
+      My work involves building scalable APIs with Django REST Framework, managing
+      databases with MySQL, and deploying solutions on AWS.
+    </p>
+  </section>
+
+  <section class="section" data-aos="fade-right">
+    <h2>🛠 Tech Stack</h2>
+    <div class="tech-stack">
+      <pre>
+Languages      : Python, C++, JavaScript, HTML/CSS
+Frameworks     : Django, Django REST Framework
+Databases      : MySQL
+Cloud          : AWS (EC2, S3, IAM)
+Version Control: Git, GitHub
+DevOps Tools   : Jenkins, Linux, Bash
+Others         : JIRA, Networking, Generative AI
+      </pre>
+    </div>
+    <div class="logos">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-left">
+    <h2>📁 Projects</h2>
+
+    <div class="project-card" data-aos="zoom-in-up">
+      <h3>🐶 TingDog Master</h3>
+      <p>A playful Tinder-style web app for dog profiles built using Django and REST APIs.</p>
+      <img src="https://raw.githubusercontent.com/your-github-username/tingdog/master/preview.jpg" alt="TingDog Master Screenshot">
+    </div>
+
+    <div class="project-card" data-aos="zoom-in-up">
+      <h3>💸 DRF Payment</h3>
+      <p>Secure money transaction system with database integration and DRF APIs for storing payment records safely.</p>
+      <img src="https://raw.githubusercontent.com/your-github-username/drf-payment/master/database-transaction.jpg" alt="DRF Payment Screenshot">
+    </div>
+  </section>
+
+  <section class="section" data-aos="zoom-in">
+    <h2>📫 Connect With Me</h2>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+      <a href="mailto:your.email@example.com">Email</a>
+    </div>
+  </section>
+
+  <footer data-aos="fade-up">
+    💡 "Strive for clean, scalable, and secure code—your future self and teammates will thank you."
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    anime({
+      targets: '#title',
+      translateY: [-50, 0],
+      opacity: [0, 1],
+      duration: 2000,
+      easing: 'easeOutExpo'
+    });
+  </script>
+</body>
+
+</html>
